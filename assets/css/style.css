@@ -1,11 +1,63 @@
-.container{
-	border: 10px;
-	border-style: solid;
-	/*padding: 10px;*/
-	/*margin: 10px;*/
-	background-image: url("../images/starwars.png");
+/*Setting properties to Body and background image so as 
+  to display background image as wallpaper*/
+body,html{
+	background-image: url("../images/back1.gif");
+	 background-position: center;
+	height: 100%;
 }
-img{
-	margin: 10px;
-	padding: 10px;
+/*Adjusting the size of images*/
+img {
+	height: 60px;
+	width: 90px;
+	display: block;
+	margin: auto;
+}
+/*Setting properties for Paragraph*/
+p{
+	text-align: center;
+}
+/*setting background color for the navigation header*/
+.back-color{
+	background-color: grey;
+}
+/*Animation to the star wars logo*/
+.logo{
+	position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;;
+    animation-timing-function: linear;
+}
+/* The animation code */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1000px;}
+}
+/*setting properties for the Player Div*/
+.playerDiv{
+	background-color: white;
+	display: inline-block;
+	width: 150px;
+	height: 120px;
+	border: solid 3px green;
+	margin: 2px;
+	margin-top: 10px;
+}
+/*Setting properties for the enemy area*/
+.enemyDiv {
+	background-color: red;
+	display: inline-block;
+	width: 150px;
+	height: 120px;
+	border: solid 3px green;
+	margin: 2px;
+}
+/*Setting properties for the defender*/
+.defenderDiv {
+	background-color: black;
+	display: inline-block;
+	width: 150px;
+	height: 120px;
+	border: solid 3px green;
+	margin: 2px;
 }

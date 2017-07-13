@@ -11,34 +11,147 @@
 <script type="text/javascript" src= "assets/javascript/game.js"></script>
 </head>
 <body >
-<!-- Container -->
+<!-- Navigation bar -->
+<nav class="navbar navbar-default" >
+  <div class="container-fluid back-color">
+    <div class="navbar-header">
+        <img class= "logo" alt="Brand" src="assets/images/logo.png" >
+
+    </div>
+  </div>
+</nav>
+<!-- Container for the player ima-->
 <div class="container">
 <!-- Row 1 started -->
   <div class="row">
   <!-- Column1 for character1 -->
-
-     <div class="col-md-2" style="padding: 0px" class="char1" >
-       <img id="character1" class="img img-thumbnail" src="assets/images/character1.gif" >
+  
+     <div class="col-md-2 playerDiv gameCharacter" style="padding: 0px" id ="rowOnechar1" value= "luke"  >
+       <p>Luke</p>
+       <img id="character1" src="assets/images/character1.gif" >
+       <p class="char1Health">HEALTH</p>
      </div>
   <!--Column2 for character2  -->
-     <div class="col-md-2 " style="padding: 0px" >
-     	<img id="character2" class="img img-thumbnail" src="assets/images/character2.gif"  > 
+     <div class="col-md-2 playerDiv  gameCharacter" style="padding: 0px" id ="rowOnechar2" value= "yoda"  >
+     <p>Yoda</p>
+     	<img id="character2"  src="assets/images/character2.gif"  > 
+      <p class="char2Health">HEALTH</p>
+     </div>
+    
+     <!--Column2 for character3  -->
+     <div class="col-md-2 playerDiv  gameCharacter" style="padding: 0px" id ="rowOnechar3" value= "amee" >
+     <p>Amee</p>
+     	<img id="character3" src="assets/images/character3.gif" > 
+      <p class="char3Health">HEALTH</p>
+     </div>
+     <!--Column2 for character4  -->
+     <div class="col-md-2 playerDiv  gameCharacter" style="padding: 0px" id ="rowOnechar4"  value= "ap5"  >
+     <p>AP5</p>
+     	<img id="character4" src="assets/images/character4.gif" > 
+      <p class="char4Health">HEALTH</p>
+     </div>
+  </div> <!--Row1 close-->
+
+<!-- Row 2 to display YOUR CHARACTER -->
+<h2 style="color: white">Your Character:</h2>
+  <div class="row">
+     <div class="col-md-2 playerDiv gameCharacter" style="padding: 0px" id ="row2char1" value= "luke"  >
+       <p>Luke</p>
+       <img id="character1" src="assets/images/character1.gif" >
+       <p class="char1Health">HEALTH</p>
+     </div>
+  <!--Column2 for character2  -->
+     <div class="col-md-2 playerDiv  gameCharacter" style="padding: 0px" id ="row2char2" value= "yoda"  >
+     <p>Yoda</p>
+      <img id="character2"  src="assets/images/character2.gif"  > 
+      <p class="char2Health">HEALTH</p>
      </div>
     
      <!--Column2 for character2  -->
-     <div class="col-md-2 " style="padding: 0px" >
-     	<img id="character3" class="img img-thumbnail" src="assets/images/character3.gif" > 
+     <div class="col-md-2 playerDiv  gameCharacter" style="padding: 0px" id ="row2char3" value= "amee" >
+     <p>Amee</p>
+      <img id="character3" src="assets/images/character3.gif" > 
+      <p class="char3Health">HEALTH</p>
      </div>
      <!--Column2 for character2  -->
-     <div class="col-md-2 " style="padding: 0px" >
-     	<img id="character4" class="img img-thumbnail" src="assets/images/character4.gif" > 
+     <div class="col-md-2 playerDiv  gameCharacter" style="padding: 0px" id ="row2char4"  value= "ap5"  >
+     <p>Ap5</p>
+      <img id="character4" src="assets/images/character4.gif" > 
+      <p class="char4Health">HEALTH</p>
+     </div>
+  </div> <!--Row1 close-->
+
+<h2 style="color: white">Enemies Available To Attack:</h2>
+    <!-- Third row of tiles for available enemies -->
+   <div class="row">
+     <div class="col-md-2 enemyDiv gameCharacter" style="padding: 0px" id ="row3char1" value= "luke"  >
+       <p>Luke</p>
+       <img id="character1" src="assets/images/character1.gif" >
+       <p class="char1Health">HEALTH</p>
+     </div>
+  <!--Column2 for character2  -->
+     <div class="col-md-2 enemyDiv playerDiv  gameCharacter" style="padding: 0px" id ="row3char2" value= "yoda"  >
+     <p>Yoda</p>
+      <img id="character2"  src="assets/images/character2.gif"  > 
+      <p class="char2Health">HEALTH</p>
+     </div>
+    
+     <!--Column2 for character2  -->
+     <div class="col-md-2 enemyDiv playerDiv  gameCharacter" style="padding: 0px" id ="row3char3" value= "amee" >
+     <p>Amee</p>
+      <img id="character3" src="assets/images/character3.gif" > 
+      <p class="char3Health"</p>>HEALTH</p>
+     </div>
+     <!--Column2 for character2  -->
+     <div class="col-md-2  enemyDiv playerDiv  gameCharacter" style="padding: 0px" id ="row3char4"  value= "ap5"  >
+     <p>Ap5</p>
+      <img id="character4" src="assets/images/character4.gif" > 
+      <p class="char4Health">HEALTH</p>
+     </div>
+  </div> <!--Row1 close-->
+  <h2 style="color: white">Fight Section</h2>
+
+  <button type="button" class="btn btn-warning attackButton">ATTACK</button>
+
+  <h2 style="color: white">DEFENDER</h2>
+    <!-- 4th row of tiles for available defender -->
+   <div class="row">
+     <div class="col-md-2 defenderDiv gameCharacter" style="padding: 0px" id ="row4char1" value= "luke"  >
+       <p>Luke</p>
+       <img id="character1" src="assets/images/character1.gif" >
+       <p class="char1Health">HEALTH</p>
+     </div>
+  <!--Column2 for character2  -->
+     <div class="col-md-2 defenderDiv  gameCharacter" style="padding: 0px" id ="row4char2" value= "yoda"  >
+     <p>Yoda</p>
+      <img id="character2"  src="assets/images/character2.gif"  > 
+      <p class="char2Health">HEALTH</p>
+     </div>
+    
+     <!--Column2 for character2  -->
+     <div class="col-md-2 defenderDiv  gameCharacter" style="padding: 0px" id ="row4char3" value= "amee" >
+     <p>Amee</p>
+      <img id="character3" src="assets/images/character3.gif" > 
+      <p class="char3Health">HEALTH</p>
+     </div>
+     <!--Column2 for character2  -->
+     <div class="col-md-2  defenderDiv   gameCharacter" style="padding: 0px" id ="row4char4"  value= "ap5"  >
+     <p>Ap5</p>
+      <img id="character4" src="assets/images/character4.gif" > 
+      <p class="char4Health">HEALTH</p>
      </div>
   </div> <!--Row1 close-->
  
  <div class="row">
  <div  class= "col-md-3" id="empty"></div>
  <div class="col-md-12" id="enemy"></div>
+ <div class="col-md-3" id="defender"></div>
  </div>
+ <!-- Now a div where game messages will go -->
+      <h4 id="gameMessages"></h4>
+
+      <!-- Now the reset button -->
+      <button type="button" class="btn btn-warning resetButton">RESET</button>
 </div> <!--Container close-->
 
      
