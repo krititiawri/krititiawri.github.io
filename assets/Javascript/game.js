@@ -407,7 +407,7 @@ function selectPlayer(){
 	// defender and isGameBegun is true and isGameOver is not false
 	function playAttackSound() {
 		if (isGameBegun == true && isGameOver == false && gamePausedForAnotherDefender == false) {
-			var audio = new Audio("assets/images/fire.mp3");
+			var audio = new Audio("assets/images/Fire.mp3");
 			audio.play();
 		}		
 	}
