@@ -68,7 +68,7 @@ $(document).ready(function () {
 			$("#row2char3").css("display", "none");
 		}
 		if (char4Array[0] == "2" && char4Array[1] == true) {
-			$("#row2cha4").css("display", "inline-block")
+			$("#row2char4").css("display", "inline-block")
 		} else {
 			$("#row2char4").css("display", "none");
 		}
