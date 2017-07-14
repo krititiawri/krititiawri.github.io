@@ -392,14 +392,14 @@ function selectPlayer(){
 		isGameOver = true;
 		$("#gameMessages").html("You have been defeated... GAME OVER!");
 		$(".resetButton").css("display", "block");
-		consoleLogVariables();
+	
 	}
 	// function to deal with win by player
 	function playerWon() {
 		isGameOver = true;
 		$("#gameMessages").html("YOU WON!!! GAME OVER!");
 		$(".resetButton").css("display", "block");
-		consoleLogVariables();
+	
 	}
 
 	// function to play attack button sound when game running
